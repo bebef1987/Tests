@@ -36,7 +36,9 @@ public class CloudPage extends PageObject {
 	
 	public void search(String search_term){
 		element(searchField).waitUntilVisible();
-		element(searchField).sendKeys(search_term);
+		for (String key : search_term.split("")){
+			element(searchField).sendKeys(key);
+		}
 		element(searchField).sendKeys(Keys.ENTER);
 	}
 
