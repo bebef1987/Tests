@@ -12,13 +12,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
-import com.requirements.Application;
+import com.requirements.Mimosa;
 import com.steps.CloudSteps;
 import com.steps.HeaderSteps;
 import com.steps.LogInPageSteps;
 
 @RunWith(ThucydidesRunner.class)
-@Story(Application.Cloud.Design.class)
+@Story(Mimosa.Cloud.Design.class)
 
 public class DesignNetworkTest {
 

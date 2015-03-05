@@ -18,8 +18,9 @@ public class Mimosa {
 	}
 	@Feature
 	public class Cloud{
-		public class Unclock{}
+		public class Unlock{}
 		public class Design{}
 		public class Manage{}
 	}
+
 }

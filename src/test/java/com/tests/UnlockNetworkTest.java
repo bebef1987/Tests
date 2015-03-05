@@ -12,15 +12,14 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
-import com.requirements.Application;
+import com.requirements.Mimosa;
 import com.steps.CloudSteps;
 import com.steps.HeaderSteps;
 import com.steps.LogInPageSteps;
 import com.steps.UnlockSteps;
 
 @RunWith(ThucydidesRunner.class)
-@Story(Application.Cloud.Unlock.class)
-
+@Story(Mimosa.Cloud.Unlock.class)
 public class UnlockNetworkTest {
 
 	@Managed(uniqueSession = false)
