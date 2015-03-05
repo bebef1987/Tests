@@ -1,8 +1,12 @@
 package com.steps;
 
+import org.openqa.selenium.remote.server.handler.SwitchToFrame;
+
 import com.pages.HeaderPage;
+import com.pages.ProductsPage;
 
 import net.thucydides.core.annotations.Step;
+import net.thucydides.core.annotations.StepGroup;
 import net.thucydides.core.pages.Pages;
 import net.thucydides.core.steps.ScenarioSteps;
 
@@ -30,5 +34,10 @@ public class HeaderSteps extends ScenarioSteps{
 	public void checkUserIsLoggedIn(){
 		headerPage().isUserNameVisibile();
 	}
-
+	
+	@Step 
+	public void clickProductsButton(){
+		ProductsPage productsPage = headerPage().clickProductsButton();
+		productsPage.shouldBeDisplayed();
+	}
 }

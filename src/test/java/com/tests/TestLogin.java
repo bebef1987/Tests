@@ -11,6 +11,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
+import com.pages.HomePage;
 import com.requirements.Mimosa;
 import com.steps.HeaderSteps;
 import com.steps.LogInPageSteps;
@@ -21,12 +22,16 @@ public class TestLogin {
 	
 	@Managed(uniqueSession = false)
     public WebDriver webdriver;
+	
+	@ManagedPages(defaultUrl = "http://mimosa.co")
+	public Pages pages;
 
     @Steps
     public LogInPageSteps loginPageSteps;
 
     @Steps
     public HeaderSteps headerSteps;
+ 
     
     @Test
     public void performLogin(){

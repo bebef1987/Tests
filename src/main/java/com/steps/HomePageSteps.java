@@ -1,5 +1,6 @@
 package com.steps;
 
+import net.thucydides.core.annotations.Step;
 import net.thucydides.core.pages.Pages;
 import net.thucydides.core.steps.ScenarioSteps;
 
@@ -19,5 +20,10 @@ public class HomePageSteps extends ScenarioSteps{
 	
 	public HomePage homePage(){
 		return getPages().currentPageAt(HomePage.class);
+	}
+	
+	@Step
+	public void openHomePage(){
+		homePage().open();
 	}
 }
